@@ -9,7 +9,11 @@ return {
 
   -- == Examples of Adding Plugins ==
 
-  "andweeb/presence.nvim",
+  {
+    "autra/base16-vim",
+    config = function() vim.cmd.colorscheme "base16-kantix" end,
+    specs = {}
+  },
   {
     "ray-x/lsp_signature.nvim",
     event = "BufRead",
