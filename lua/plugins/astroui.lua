@@ -33,5 +33,11 @@ return {
       LSPLoading9 = "⠇",
       LSPLoading10 = "⠏",
     },
+    status = {
+      colors = {
+        bg = "#eaeaea",
+        section_bg = "#eaeaea",
+      }
+    },
   },
 }
