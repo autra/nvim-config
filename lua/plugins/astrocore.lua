@@ -87,5 +87,15 @@ return {
         -- ["<C-S>"] = false,
       },
     },
+    autocmds = {
+      highlight = {
+        {
+          event = {'BufRead', 'BufNewFile'},
+          pattern  = "project.meta",
+          desc = "Set ini to ft of project.meta",
+          command = "setfiletype ini"
+        }
+      },
+    },
   },
 }
